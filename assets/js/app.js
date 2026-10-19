@@ -14,10 +14,10 @@ const INR = n => '₹' + n.toLocaleString('en-IN');
 
 /* ---------------- DATA ---------------- */
 const SLIDES = [
-  { name:'Cloudstomp',  price:6499,  l1:'STEP INTO',  l2:'Your Vibe',  pa:'#7b2ff7', pb:'#c8ff2e', soft:'#ecd8ff', btn:'#7b2ff7', sc1:'#7b2ff7', sc2:'#d63cff' },
+  { name:'Dad Fizz',    price:8999,  l1:'FRESH FIT',  l2:'Fresh Kick', pa:'#e5007e', pb:'#ffc414', soft:'#ffe0ef', btn:'#d4006f', sc1:'#e5007e', sc2:'#ff8a00' },
   { name:'Bubble Drift',price:7299,  l1:'OWN YOUR',   l2:'Edge Now',   pa:'#ff2d87', pb:'#ff7a1a', soft:'#ffd6e8', btn:'#f0167a', sc1:'#ff2d87', sc2:'#ff7a1a' },
   { name:'Trail Riot',  price:7999,  l1:'MAKE EVERY', l2:'Step Count', pa:'#a6e600', pb:'#7b2ff7', soft:'#e9ffc2', btn:'#5b21b6', sc1:'#78b800', sc2:'#5b21b6' },
-  { name:'Dad Fizz',    price:8999,  l1:'FRESH FIT',  l2:'Fresh Kick', pa:'#e5007e', pb:'#ffc414', soft:'#ffe0ef', btn:'#d4006f', sc1:'#e5007e', sc2:'#ff8a00' },
+  { name:'Cloudstomp',  price:6499,  l1:'STEP INTO',  l2:'Your Vibe',  pa:'#7b2ff7', pb:'#c8ff2e', soft:'#ecd8ff', btn:'#7b2ff7', sc1:'#7b2ff7', sc2:'#d63cff' },
   { name:'Hi-Volt Air', price:10499, l1:'BUILT TO',   l2:'Bounce Back',pa:'#1f4bff', pb:'#ff7a1a', soft:'#dbe3ff', btn:'#1f4bff', sc1:'#1f4bff', sc2:'#ff6a00' },
 ];
 const PRODUCTS = [
@@ -234,10 +234,6 @@ if (finePointer){
   const secs=links.map(a=>$(a.getAttribute('href')));
   const onScroll=()=>{
     const y=scrollY;
-    nav.classList.toggle('is-hidden', y>lastY+2 && y>innerHeight*.8 && !drawer.classList.contains('open'));
-    if (y<lastY-2) nav.classList.remove('is-hidden');
-    lastY=y;
-    nav.classList.toggle('dark', darkSecs.some(s=>{ const r=s.getBoundingClientRect(); return r.top<=40 && r.bottom>40; }));
     let act=0; secs.forEach((s,i)=>{ if(s && s.getBoundingClientRect().top<innerHeight*.4) act=i; });
     links.forEach((l,i)=>l.classList.toggle('active',i===act));
   };
@@ -421,7 +417,7 @@ $$('video[data-src]').forEach(v=>vio.observe(v));
 /* ---------------- MOODS ---------------- */
 (() => {
   const ms=$$('.mood');
-  const open=m=>{ ms.forEach(x=>{ const on=x===m; x.classList.toggle('is-open',on); const v=$('video',x); if(on){ ensureSrc(v); v.play().catch(()=>{}); } else v.pause(); }); };
+  const open=m=>{ ms.forEach(x=>{ const on=x===m; x.classList.toggle('is-open',on); }); };
   ms.forEach(m=>{ m.addEventListener('click',()=>open(m)); if(finePointer) m.addEventListener('mouseenter',()=>open(m)); });
   gsap.from(ms,{ y:100, opacity:0, stagger:.12, duration:1.2, ease:'expo.out', scrollTrigger:{ trigger:'.mood-row', start:'top 85%' } });
 })();
