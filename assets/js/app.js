@@ -126,7 +126,7 @@ function go(i, dir = 1){
     .to($$('.ch', l2), { yPercent:-110, opacity:0, duration:.45, stagger:.012, ease:'power3.in' }, .05)
     .to('.giant-num span', { yPercent:-100, duration:.5, ease:'power3.in' }, 0)
     .to('.paint', { clipPath:'inset(0% 0% 0% 100%)', duration:.55, ease:'power3.in', stagger:.05 }, 0)
-    .to(prev, { xPercent:14*dir, scale:1.06, opacity:0, filter:'blur(12px)', duration:.6, ease:'power3.in' }, 0)
+    .to(prev, { xPercent:14*dir, scale:1.06, opacity:0, duration:.6, ease:'power3.in' }, 0)
     .add(()=>{
       setTheme(s, .8);
       splitChars(l1, s.l1); splitChars(l2, s.l2);
@@ -139,14 +139,15 @@ function go(i, dir = 1){
     .add(()=>{ prev.classList.remove('is-on'); gsap.set(prev,{clearProps:'all'}); nxt.classList.add('is-on'); }, .6)
     .fromTo('.paint', { clipPath:'inset(0% 100% 0% 0%)' }, { clipPath:'inset(0% 0% 0% 0%)', duration:1, ease:'expo.out', stagger:.08, ...IR }, .62)
     .fromTo('.paint-a', { rotate:-14, scale:.92 }, { rotate:-8, scale:1, duration:1.4, ease:'expo.out', ...IR }, .62)
-    .fromTo(nxt, { xPercent:-10*dir, yPercent:6, scale:.9, rotate:-3*dir, opacity:0, filter:'blur(10px)' },
-                 { xPercent:0, yPercent:0, scale:1, rotate:0, opacity:1, filter:'blur(0px)', duration:1.2, ease:'expo.out', clearProps:'filter', ...IR }, .62)
+    .fromTo(nxt, { xPercent:-10*dir, yPercent:6, scale:.9, rotate:-3*dir, opacity:0 },
+                 { xPercent:0, yPercent:0, scale:1, rotate:0, opacity:1, duration:1.2, ease:'expo.out', ...IR }, .62)
     .fromTo('.giant-num span', { yPercent:100 }, { yPercent:0, duration:1, ease:'expo.out', ...IR }, .7)
     .add(()=>{
-      gsap.to($$('.ch', l1), { yPercent:0, duration:.9, stagger:.025, ease:'expo.out' });
-      gsap.fromTo($$('.ch', l2), { yPercent:110, opacity:0, rotate:8 }, { yPercent:0, opacity:1, rotate:0, duration:1, stagger:.03, ease:'expo.out', delay:.1 });
+      gsap.to($$('.ch', l1), { yPercent:0, duration:.9, stagger:.025, ease:'expo.out' }).timeScale(2.4);
+      gsap.fromTo($$('.ch', l2), { yPercent:110, opacity:0, rotate:8 }, { yPercent:0, opacity:1, rotate:0, duration:1, stagger:.03, ease:'expo.out', delay:.1 }).timeScale(2.4);
     }, .62)
     .fromTo('.spin-badge', { scale:.4, rotate:-90 }, { scale:1, rotate:0, duration:1, ease:'back.out(2)', ...IR }, .7);
+  tl.timeScale(2.4);
   restartAuto();
 }
 const next = () => go((cur+1)%SLIDES.length, 1);
