@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>STRYDA — Step Into Your Vibe</title>
+<meta name="description" content="STRYDA — loud, chunky, premium-comfort footwear. Sneakers, platforms and sandals made to move with you.">
+<meta property="og:image" content="assets/img/og.jpg">
+<meta name="theme-color" content="#7b2ff7">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800;900&family=Playfair+Display:ital,wght@1,800;1,900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/model-1.webp">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="is-loading">
+
+<!-- ================= PRELOADER ================= -->
+<div class="loader" aria-hidden="true">
+  <div class="loader-paint"><i></i><i></i><i></i><i></i></div>
+  <div class="loader-word"><span>S</span><span>T</span><span>R</span><span>Y</span><span>D</span><span>A</span></div>
+  <div class="loader-count"><b>0</b><small>%</small></div>
+  <p class="loader-tag">lacing up your vibe</p>
+</div>
+
+<div class="cursor" aria-hidden="true"><span class="cursor-dot"></span><span class="cursor-ring"><em>Drag</em></span></div>
+<canvas class="trail" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ================= HEADER ================= -->
+<header class="nav">
+  <a href="#top" class="logo" aria-label="STRYDA home"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 27c6 6 20 7 24-1 3-6-4-9-11-10S10 12 12 7c3-6 15-4 19 1" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg><span>STRYDA</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#top" class="active">Home</a><a href="#shop">Shop</a><a href="#anatomy">Tech</a><a href="#flux">Flux 01</a><a href="#moods">Moods</a><a href="#drop">Drop</a>
+  </nav>
+  <div class="nav-icons">
+    <button class="icon-btn" aria-label="Search" data-toast="Search is a demo in this prototype"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+    <button class="icon-btn wish-btn" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><b class="badge" data-wish>0</b></button>
+    <button class="icon-btn bag-btn" aria-label="Bag"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><b class="badge" data-bag>0</b></button>
+    <button class="icon-btn menu-btn" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 8h16M4 16h11"/></svg></button>
+  </div>
+</header>
+
+<div class="mmenu" aria-hidden="true">
+  <nav><a href="#top">Home</a><a href="#shop">Shop</a><a href="#anatomy">Tech</a><a href="#flux">Flux 01</a><a href="#moods">Moods</a><a href="#drop">Drop</a></nav>
+  <p>Free shipping across India · 30-day easy returns</p>
+</div>
+
+<main>
+<!-- ================= HERO ================= -->
+<section class="hero" id="top" data-hdr="light">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="blob"></div>
+    <div class="paint paint-a"><div class="paint-fill"></div></div>
+    <div class="paint paint-b"><div class="paint-fill"></div></div>
+    <div class="paint paint-c"><div class="paint-fill"></div></div>
+    <div class="dots dots-1"></div><div class="dots dots-2"></div>
+    <svg class="squiggle sq-1" viewBox="0 0 120 60"><path d="M4 40c10-30 20 20 30-6s18 18 28-8 18 20 30-4 14 10 24 0" /></svg>
+    <svg class="squiggle sq-2" viewBox="0 0 60 120"><path d="M30 4c-22 10 22 20 0 30s22 20 0 30 22 20 0 30" /></svg>
+    <svg class="globe" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46"/><ellipse cx="50" cy="50" rx="20" ry="46"/><ellipse cx="50" cy="50" rx="36" ry="46"/><path d="M4 50h92M10 28h80M10 72h80"/></svg>
+    <div class="giant-num"><span>01</span></div>
+  </div>
+
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="pulse"></span> New season · <span data-hname>Cloudstomp</span></p>
+    <h1 class="h-title" aria-live="polite">
+      <span class="h-l1"><span class="h-l1-in">STEP INTO</span></span>
+      <span class="h-l2"><span class="h-l2-in">your vibe</span></span>
+    </h1>
+    <p class="lede">Bold designs, premium comfort.<br>Made to move with you.</p>
+    <div class="cta">
+      <a href="#shop" class="btn btn-primary magnetic"><span>Shop now</span><i>→</i></a>
+      <a href="#shop" class="btn btn-ghost magnetic"><span>Explore collection</span></a>
+    </div>
+    <div class="hero-meta">
+      <div class="hm-price"><small>From</small><b data-hprice>₹6,499</b></div>
+      <div class="hm-count"><b data-hidx>01</b><span>/ 05</span></div>
+      <div class="hm-bar"><i></i></div>
+    </div>
+  </div>
+
+  <div class="hero-stage">
+    <div class="stage-inner">
+      <img class="model" src="assets/img/model-1.webp" srcset="assets/img/model-1-m.webp 860w, assets/img/model-1.webp 1600w" sizes="(max-width:820px) 112vw, 58vw" alt="Model lounging in a pink chair wearing cream Cloudstomp platform sandals" data-i="0">
+      <img class="model" src="assets/img/model-2.webp" srcset="assets/img/model-2-m.webp 860w, assets/img/model-2.webp 1600w" sizes="(max-width:820px) 112vw, 58vw" alt="Model in a fuchsia suit wearing Bubble Drift sport sandals" data-i="1" loading="lazy">
+      <img class="model" src="assets/img/model-3.webp" srcset="assets/img/model-3-m.webp 860w, assets/img/model-3.webp 1600w" sizes="(max-width:820px) 112vw, 58vw" alt="Model in a lime suit wearing black Trail Riot sandals" data-i="2" loading="lazy">
+      <img class="model" src="assets/img/model-4.webp" srcset="assets/img/model-4-m.webp 860w, assets/img/model-4.webp 1600w" sizes="(max-width:820px) 112vw, 58vw" alt="Model in pink cargos wearing Dad Fizz chunky sneakers" data-i="3" loading="lazy">
+      <img class="model" src="assets/img/model-5.webp" srcset="assets/img/model-5-m.webp 860w, assets/img/model-5.webp 1600w" sizes="(max-width:820px) 112vw, 58vw" alt="Model in a cobalt tracksuit wearing Hi-Volt Air high-tops" data-i="4" loading="lazy">
+    </div>
+    <div class="spin-badge" aria-hidden="true">
+      <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs><text><textPath href="#circ">NEW DROP ✺ LIMITED PAIRS ✺ 2026 ✺ </textPath></text></svg>
+      <b>✺</b>
+    </div>
+  </div>
+
+  <aside class="rail" aria-label="Choose a look">
+    <span class="rail-line"><i></i></span>
+    <button class="thumb is-active" data-go="0" aria-label="Cloudstomp"><img src="assets/img/shoe-1.webp" alt=""></button>
+    <button class="thumb" data-go="1" aria-label="Bubble Drift"><img src="assets/img/shoe-2.webp" alt=""></button>
+    <button class="thumb" data-go="2" aria-label="Trail Riot"><img src="assets/img/shoe-3.webp" alt=""></button>
+    <button class="thumb" data-go="3" aria-label="Dad Fizz"><img src="assets/img/shoe-4.webp" alt=""></button>
+    <button class="thumb" data-go="4" aria-label="Hi-Volt Air"><img src="assets/img/shoe-5.webp" alt=""></button>
+  </aside>
+
+  <div class="hero-arrows">
+    <button class="arrow" data-dir="-1" aria-label="Previous look">←</button>
+    <button class="arrow" data-dir="1" aria-label="Next look">→</button>
+  </div>
+  <a class="scroll-cue" href="#marquee"><span>Scroll</span><i></i></a>
+</section>
+
+<!-- ================= MARQUEE ================= -->
+<section class="marquee-wrap" id="marquee" aria-label="Brand slogans">
+  <div class="marquee m1"><div class="track"><span>STEP INTO YOUR VIBE</span><em>✺</em><span>OWN YOUR EDGE</span><em>✺</em><span>MAKE EVERY STEP COUNT</span><em>✺</em><span>FRESH FIT · FRESH KICK</span><em>✺</em><span>BUILT TO BOUNCE</span><em>✺</em></div></div>
+  <div class="marquee m2"><div class="track"><span>FREE SHIPPING ACROSS INDIA</span><em>●</em><span>30-DAY EASY RETURNS</span><em>●</em><span>BOUNCE FOAM™ COMFORT</span><em>●</em><span>LIMITED DROPS EVERY MONTH</span><em>●</em></div></div>
+</section>
+
+<!-- ================= ANATOMY (scroll film) ================= -->
+<section class="anatomy" id="anatomy" data-hdr="dark">
+  <div class="anat-pin">
+    <canvas class="anat-canvas" data-seq="assets/seq/anat" data-count="124"></canvas>
+    <div class="anat-shade"></div>
+    <div class="anat-head">
+      <p class="eyebrow light">The anatomy of bounce</p>
+      <h2>Built in layers.<br><em>Worn loud.</em></h2>
+    </div>
+    <div class="anat-labels">
+      <div class="al" data-at="0.58" data-fx="0.34" data-fy="0.18" data-side="l"><b>01</b><span>Recycled poly laces</span><small>Neon-dyed, never fraying</small></div>
+      <div class="al" data-at="0.66" data-fx="0.71" data-fy="0.33" data-side="r"><b>02</b><span>Engineered knit upper</span><small>Breathable 3D-mesh zones</small></div>
+      <div class="al" data-at="0.74" data-fx="0.27" data-fy="0.51" data-side="l"><b>03</b><span>Memory-foam insole</span><small>Moulds to you in 7 days</small></div>
+      <div class="al" data-at="0.82" data-fx="0.74" data-fy="0.66" data-side="r"><b>04</b><span>Bounce Foam™ + air pod</span><small>38% energy return</small></div>
+      <div class="al" data-at="0.90" data-fx="0.25" data-fy="0.76" data-side="l"><b>05</b><span>Grip-lug outsole</span><small>Rain, rooftop, runway</small></div>
+    </div>
+    <div class="anat-stats">
+      <div><b data-count-to="38">0</b><span>% energy return</span></div>
+      <div><b data-count-to="290">0</b><span>g per shoe (UK 7)</span></div>
+      <div><b data-count-to="5">0</b><span>layers, zero glue smell</span></div>
+    </div>
+    <div class="anat-progress"><i></i></div>
+  </div>
+</section>
+
+<!-- ================= FLUX COLORWAY ================= -->
+<section class="flux" id="flux" data-hdr="light">
+  <div class="flux-flood"></div>
+  <div class="flux-word" aria-hidden="true"><span>FLUX</span><span>FLUX</span></div>
+  <div class="flux-inner">
+    <div class="flux-info">
+      <p class="eyebrow">Signature silhouette</p>
+      <h2>Flux 01</h2>
+      <p class="flux-name" data-fname>Candy Riot</p>
+      <p class="flux-desc">Our loudest runner yet. A sculpted Bounce Foam™ midsole with a see-through air pod, wrapped in a three-tone knit that stays fresh past 10k steps.</p>
+      <div class="swatches" role="radiogroup" aria-label="Colorway">
+        <button class="sw is-active" role="radio" aria-checked="true" data-c="0" style="--s1:#ff2d87;--s2:#7b2ff7" aria-label="Candy Riot"></button>
+        <button class="sw" role="radio" aria-checked="false" data-c="1" style="--s1:#b6f000;--s2:#5b21b6" aria-label="Lime Voltage"></button>
+        <button class="sw" role="radio" aria-checked="false" data-c="2" style="--s1:#1f4bff;--s2:#ff7a1a" aria-label="Cobalt Sunset"></button>
+      </div>
+      <div class="sizes" role="radiogroup" aria-label="Size (UK)">
+        <button class="sz">5</button><button class="sz">6</button><button class="sz is-active">7</button><button class="sz">8</button><button class="sz">9</button><button class="sz">10</button><button class="sz out" disabled>11</button>
+      </div>
+      <div class="flux-buy">
+        <b class="flux-price">₹11,999</b>
+        <button class="btn btn-dark magnetic add-flux"><span>Add to bag</span><i>+</i></button>
+      </div>
+    </div>
+    <div class="flux-stage">
+      <div class="flux-ring"></div>
+      <div class="flux-shoes">
+        <img src="assets/img/flux-1.webp" alt="Flux 01 sneaker in Candy Riot pink and violet" class="fx is-on">
+        <img src="assets/img/flux-2.webp" alt="Flux 01 sneaker in Lime Voltage" class="fx" loading="lazy">
+        <img src="assets/img/flux-3.webp" alt="Flux 01 sneaker in Cobalt Sunset" class="fx" loading="lazy">
+      </div>
+      <div class="flux-shadow"></div>
+      <div class="flux-tags"><span>Air pod</span><span>Knit upper</span><span>38% return</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SHOP ================= -->
+<section class="shop" id="shop" data-hdr="light">
+  <div class="sec-head">
+    <p class="eyebrow">Shop the drop</p>
+    <h2 class="split">Pick your <em>pair.</em></h2>
+    <div class="filters" role="tablist">
+      <button class="flt is-active" data-f="all">All</button><button class="flt" data-f="sneakers">Sneakers</button><button class="flt" data-f="sandals">Sandals</button><button class="flt" data-f="platforms">Platforms</button>
+    </div>
+  </div>
+  <div class="grid" data-grid></div>
+</section>
+
+<!-- ================= MOODS (video) ================= -->
+<section class="moods" id="moods" data-hdr="dark">
+  <div class="sec-head light">
+    <p class="eyebrow light">Moods in motion</p>
+    <h2 class="split">Every pair has <em>a mood.</em></h2>
+  </div>
+  <div class="mood-row">
+    <article class="mood is-open" style="--mc:#ff2d87">
+      <video muted loop playsinline preload="none" poster="assets/img/l1.webp" data-src="assets/video/splash"></video>
+      <div class="mood-cap"><b>01</b><h3>Splash</h3><p>Wave Knit · ₹6,999</p></div>
+    </article>
+    <article class="mood" style="--mc:#b6f000">
+      <video muted loop playsinline preload="none" poster="assets/img/l2.webp" data-src="assets/video/pop"></video>
+      <div class="mood-cap"><b>02</b><h3>Pop</h3><p>Trail Riot · ₹7,999</p></div>
+    </article>
+    <article class="mood" style="--mc:#ff7a1a">
+      <video muted loop playsinline preload="none" poster="assets/img/l3.webp" data-src="assets/video/sun"></video>
+      <div class="mood-cap"><b>03</b><h3>Sun</h3><p>Cloudstomp · ₹6,499</p></div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= MOVE LOUD (text-mask video zoom) ================= -->
+<section class="loud" id="loud" data-hdr="dark">
+  <div class="loud-pin">
+    <video class="loud-video" muted loop playsinline preload="none" poster="assets/img/jump.webp" data-src="assets/video/jump"></video>
+    <div class="loud-mask"><h2>MOVE<br>LOUD</h2></div>
+    <div class="loud-shade"></div>
+    <div class="loud-copy">
+      <p class="eyebrow light">Campaign 05</p>
+      <h3>Colour is a <em>verb.</em></h3>
+      <a href="#drop" class="btn btn-light magnetic"><span>Join the next drop</span><i>→</i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DROP ================= -->
+<section class="drop" id="drop" data-hdr="light">
+  <div class="drop-card">
+    <div class="drop-left">
+      <p class="eyebrow">Drop 06 · Limited to 600 pairs</p>
+      <h2>Drop 06 lands in</h2>
+      <div class="countdown" data-countdown>
+        <div><b data-d>00</b><span>days</span></div><div><b data-h>00</b><span>hrs</span></div><div><b data-m>00</b><span>min</span></div><div><b data-s>00</b><span>sec</span></div>
+      </div>
+      <form class="drop-form" novalidate>
+        <input type="email" placeholder="your@email.com" aria-label="Email address" required>
+        <button class="btn btn-primary"><span>Notify me</span><i>→</i></button>
+      </form>
+      <ul class="perks"><li>Early access 24h before everyone</li><li>Free express shipping on drop day</li><li>No spam. One email per drop.</li></ul>
+    </div>
+    <div class="drop-right">
+      <img src="assets/img/shoe-5.webp" alt="Hi-Volt Air high-top preview" class="drop-shoe" loading="lazy">
+      <div class="drop-sticker">SOON</div>
+    </div>
+  </div>
+  <div class="usp">
+    <div><b>Free shipping</b><span>Across India, 3–5 days</span></div>
+    <div><b>30-day returns</b><span>Wear them, then decide</span></div>
+    <div><b>Bounce Foam™</b><span>Comfort that bounces back</span></div>
+    <div><b>Secure checkout</b><span>UPI · Cards · COD</span></div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot" data-hdr="dark">
+  <div class="foot-top">
+    <div><h4>Shop</h4><a href="#shop">Sneakers</a><a href="#shop">Sandals</a><a href="#shop">Platforms</a><a href="#flux">Flux 01</a></div>
+    <div><h4>Help</h4><a href="#">Size guide</a><a href="#">Shipping</a><a href="#">Returns</a><a href="#">Track order</a></div>
+    <div><h4>Brand</h4><a href="#">Our story</a><a href="#">Stores</a><a href="#">Careers</a><a href="#">Press</a></div>
+    <div class="foot-news"><h4>Get the drop alerts</h4><p>Colour, comfort and first dibs. Straight to your inbox.</p></div>
+  </div>
+  <div class="foot-word" aria-hidden="true">STRYDA</div>
+  <div class="foot-bot"><span>© 2026 STRYDA Footwear. Demo storefront.</span><span>Made to move with you ✺</span></div>
+</footer>
+
+<!-- bag drawer -->
+<aside class="drawer" aria-hidden="true" aria-label="Your bag">
+  <div class="drawer-head"><h3>Your bag</h3><button class="drawer-x" aria-label="Close bag">×</button></div>
+  <div class="drawer-list" data-list><p class="empty">Your bag is empty. Go get loud.</p></div>
+  <div class="drawer-foot"><div class="tot"><span>Subtotal</span><b data-total>₹0</b></div><button class="btn btn-primary w100" data-toast="Checkout connects to WooCommerce in the live build"><span>Checkout</span><i>→</i></button></div>
+</aside>
+<div class="scrim"></div>
+<div class="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
